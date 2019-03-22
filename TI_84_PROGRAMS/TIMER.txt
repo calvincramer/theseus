@@ -1,0 +1,63 @@
+50→θ
+ClrHome
+4→N
+4→O
+
+For(I,7,61
+    Line(3,I,92,I
+End
+Disp "Process 1:
+ClockOn
+startTmr→T
+
+4+(N*7)→N
+1+(O*7)→O
+For(A,1,θ
+  For(I,N,N+3
+    For(J,O,O+5
+      Pxl-Off(J,I
+    End
+  End
+End
+Disp checkTmr(T)/θ
+
+ClrDraw
+Pause 
+
+For(I,7,61
+    Line(3,I,92,I
+End
+
+4→N
+4→O
+Disp "Process 2:
+ClockOn
+startTmr→T
+
+4+(N*7)→N
+1+(O*7)→O
+For(A,1,θ
+  Pxl-Off(J,I
+  Pxl-Off(J+1,I
+  Pxl-Off(J+2,I
+  Pxl-Off(J+3,I
+  Pxl-Off(J+4,I
+  Pxl-Off(J+5,I
+  Pxl-Off(J,I+1
+  Pxl-Off(J+1,I+1
+  Pxl-Off(J+2,I+1
+  Pxl-Off(J+3,I+1
+  Pxl-Off(J+4,I+1
+  Pxl-Off(J,I+2
+  Pxl-Off(J+1,I+2
+  Pxl-Off(J+2,I+2
+  Pxl-Off(J+3,I+2
+  Pxl-Off(J+4,I+2
+  Pxl-Off(J,I+3
+  Pxl-Off(J+1,I+3
+  Pxl-Off(J+2,I+3
+  Pxl-Off(J+3,I+3
+  Pxl-Off(J+4,I+3
+  Pxl-Off(J+5,I+3
+End
+Disp checkTmr(T)/θ

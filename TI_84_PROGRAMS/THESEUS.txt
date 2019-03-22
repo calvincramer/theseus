@@ -1,0 +1,382 @@
+If 12345=iPart(θ:Then
+100fPart(θ
+DelVar θ
+If Ans=1:Then
+4+(N*7)→N
+1+(O*7)→O
+Pxl-Off(O,N
+Pxl-Off(O+1,N
+Pxl-Off(O+2,N
+Pxl-Off(O+3,N
+Pxl-Off(O+4,N
+Pxl-Off(O+5,N
+Pxl-Off(O,N+1
+Pxl-Off(O+1,N+1
+Pxl-Off(O+2,N+1
+Pxl-Off(O+3,N+1
+Pxl-Off(O+4,N+1
+Pxl-Off(O,N+2
+Pxl-Off(O+1,N+2
+Pxl-Off(O+2,N+2
+Pxl-Off(O+3,N+2
+Pxl-Off(O+4,N+2
+Pxl-Off(O,N+3
+Pxl-Off(O+1,N+3
+Pxl-Off(O+2,N+3
+Pxl-Off(O+3,N+3
+Pxl-Off(O+4,N+3
+Pxl-Off(O+5,N+3
+Return:End
+If Ans=2:Then
+3+(X*7)→N
+1+(Y*7)→O
+Pxl-On(O+1,N+2
+Pxl-On(O+1,N+3
+Pxl-On(O+2,N+1
+Pxl-On(O+2,N+4
+Pxl-On(O+3,N+1
+Pxl-On(O+3,N+4
+Pxl-On(O+4,N+2
+Pxl-On(O+4,N+3
+Return:End
+If Ans=3:Then
+3+(S*7)→N
+1+(T*7)→O
+Pxl-On(O+1,N+1
+Pxl-On(O+1,N+4
+Pxl-On(O+2,N+2
+Pxl-On(O+2,N+3
+Pxl-On(O+3,N+2
+Pxl-On(O+3,N+3
+Pxl-On(O+4,N+1
+Pxl-On(O+4,N+4
+Return:End
+If Ans=4:Then
+3+(U*7)→N
+1+(V*7)→O
+Pxl-On(O,N+1
+Pxl-On(O+1,N+1
+Pxl-On(O+2,N+1
+Pxl-On(O+3,N+1
+Pxl-On(O+4,N+1
+Pxl-On(O+5,N+1
+Pxl-On(O,N+4
+Pxl-On(O+1,N+4
+Pxl-On(O+2,N+4
+Pxl-On(O+3,N+4
+Pxl-On(O+4,N+4
+Pxl-On(O+5,N+4
+Pxl-On(O,N+2
+Pxl-On(O,N+3
+Pxl-On(O+2,N+2
+Pxl-On(O+2,N+3
+Pxl-On(O+4,N+2
+Pxl-On(O+4,N+3
+Return:End
+If Ans=6:Then
+For(I,1,12
+For(J,1,8
+If [D](J,I
+Then
+(I*7)+2→N
+(J*7)-6→O
+For(B,O,O+5
+Pxl-On(B,N
+End
+End
+End
+End
+For(I,1,13
+For(J,1,7
+If [E](J,I
+Then
+(I*7)-4→N
+(J*7)→O
+For(B,N,N+5
+Pxl-On(O,B
+End
+End
+End
+End
+Return:End
+If Ans=14:Then
+{7,13}→dim([E]
+For(A,0,6
+For(B,1,13
+expr(sub(Str2,13A+B,1→[E](A+1,B
+End
+End
+{8,12}→dim([D]
+For(A,0,7
+For(B,1,12
+expr(sub(Str1,12A+B,1→[D](A+1,B
+End
+End
+Return:End
+If Ans=16:Then
+X→N:Y→O
+12345.01→θ
+prgmTHESEUS
+S→N:T→O
+12345.01→θ
+prgmTHESEUS
+prgmLEVELS
+12345.02→θ
+prgmTHESEUS
+12345.03→θ
+prgmTHESEUS
+12345.04→θ
+prgmTHESEUS
+Return:End
+End
+0→M
+0→C
+ClrHome
+41→H
+Disp "Level (1-41): 
+Repeat W≤H and W>0
+Input W
+End
+iPart(W→W
+StoreGDB 5
+ClrDraw
+ClrHome
+GridOff
+AxesOff
+LabelOff
+FnOff 
+PlotsOff 
+ZStandard
+84→Xmin
+72→Ymax
+ZInteger
+Text(57,15,"Quit button: Zoom
+Text(⁻1,25,23,"LOADING"
+prgmLEVELS
+12345.14→θ
+prgmTHESEUS
+For(I,0,7
+Line(15,I,70,I,0
+Line(23,I+30,63,I+30,0
+End
+Horizontal 6
+Horizontal 62
+Vertical 2
+Vertical 93
+Line(0,6,0,64,0
+Line(1,6,1,64,0
+Line(94,6,94,64,0
+For(I,2,95,7
+Line(I,0,I,5,0
+End
+Text(57,3,"Level
+Text(57,25,"   
+Text(57,25,W
+Text(57,42,"quit
+Text(57,58,"reset"
+Text(57,79,"wait
+For(I,9,86,7
+For(J,7,49,7
+Pxl-On(J,I
+End
+End
+12345.06→θ
+prgmTHESEUS
+12345.02→θ
+prgmTHESEUS
+12345.03→θ
+prgmTHESEUS
+12345.04→θ
+prgmTHESEUS
+While 1
+0→A
+Repeat A=24 or A=25 or A=26 or A=34 or A=13 or A=14 or A=15
+getKey→A
+End
+If A=13:Then
+RecallGDB 5
+DelVar [E]DelVar [D]DelVar Str1DelVar Str2DelVar GDB5DelVar ADelVar BDelVar CDelVar DDelVar EDelVar FDelVar HDelVar IDelVar JDelVar MDelVar NDelVar ODelVar SDelVar TDelVar UDelVar VDelVar WDelVar XDelVar YDelVar θ
+ClrHome
+Return
+End
+If A=14:Then
+12345.16→θ
+prgmTHESEUS
+End
+If A=24:Then
+1→C
+If X>0
+Then
+If [D](Y+1,X)=0
+Then
+X→N:Y→O
+12345.01→θ
+prgmTHESEUS
+X-1→X
+12345.02→θ
+prgmTHESEUS
+End
+End
+End
+If A=25:Then
+1→C
+If Y>0
+Then
+If [E](Y,X+1)=0
+Then
+X→N:Y→O
+12345.01→θ
+prgmTHESEUS
+Y-1→Y
+12345.02→θ
+prgmTHESEUS
+End
+End
+End
+If A=26:Then
+1→C
+If X<12
+Then
+If [D](Y+1,X+1)=0
+Then
+X→N:Y→O
+12345.01→θ
+prgmTHESEUS
+X+1→X
+12345.02→θ
+prgmTHESEUS
+End
+End
+End
+If A=34:Then
+1→C
+If Y<8
+Then
+If [E](Y+1,X+1)=0
+Then
+X→N:Y→O
+12345.01→θ
+prgmTHESEUS
+Y+1→Y
+12345.02→θ
+prgmTHESEUS
+End
+End
+End
+If C or A=15:Then
+0→C
+For(E,0,1
+1→F
+If S=U and T=V:Then
+    1→M
+  End
+√((X-S)²+(Y-T)²→D
+If F:Then
+  If √((X-(S-1))²+(Y-T)²)<D:Then
+    If [D](T+1,S)=0:Then
+      S→N:T→O
+      12345.01→θ
+      prgmTHESEUS
+      S-1→S
+      12345.03→θ
+      prgmTHESEUS
+      0→F
+    End
+  End
+End
+If F:Then
+  If √((X-(S+1))²+(Y-T)²)<D:Then
+    If [D](T+1,S+1)=0:Then
+      S→N:T→O
+      12345.01→θ
+      prgmTHESEUS
+      S+1→S
+      12345.03→θ
+      prgmTHESEUS
+      0→F
+    End
+  End
+End
+If F:Then
+  If √((X-S)²+(Y-(T-1))²)<D:Then
+    If [E](T,S+1)=0:Then
+      S→N:T→O
+      12345.01→θ
+      prgmTHESEUS
+      T-1→T
+      12345.03→θ
+      prgmTHESEUS
+      0→F
+    End
+  End
+End
+If F:Then
+  If √((X-S)²+(Y-(T+1))²)<D:Then
+    If [E](T+1,S+1)=0:Then
+      S→N:T→O
+      12345.01→θ
+      prgmTHESEUS
+      T+1→T
+      12345.03→θ
+      prgmTHESEUS
+      0→F
+    End
+  End
+End
+End
+If M:Then
+12345.04→θ
+prgmTHESEUS
+End
+If (X=S and Y=T
+Then
+For(I,1,56,3
+  Pxl-On(I,1
+  Pxl-On(I,94
+End
+12345.16→θ
+prgmTHESEUS
+For(I,1,56,3
+  Pxl-Off(I,1
+  Pxl-Off(I,94
+End
+End
+If (X=U and Y=V
+Then
+W+1→W
+If W>H
+Then
+  1→W
+End
+Text(57,25,"   
+Text(57,25,W
+For(I,1,56,3
+  Pxl-On(I,1
+  Pxl-On(I,94
+End
+prgmLEVELS
+12345.14→θ
+prgmTHESEUS
+For(I,7,61
+  Line(3,I,92,I,0
+End
+For(I,9,86,7
+For(J,7,49,7
+  Pxl-On(J,I
+End
+End
+12345.06→θ
+prgmTHESEUS
+12345.02→θ
+prgmTHESEUS
+12345.03→θ
+prgmTHESEUS
+12345.04→θ
+prgmTHESEUS
+For(I,1,56,3
+  Pxl-Off(I,1
+  Pxl-Off(I,94
+End
+End
+End
+End
