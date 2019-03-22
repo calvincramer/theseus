@@ -40,5 +40,5 @@ If you get this game running on different versions of calculator, please let me 
 
 
 ### Other tools
-IDE for making the .8xp files to send to the calculator [TokenIDE](http://merthsoft.com/Tokens.zip)
+IDE for making the .8xp files to send to the calculator [TokenIDE](http://merthsoft.com/Tokens.zip)  
 Emulator: [TI SmartView](https://education.ti.com/en/software/details/en/FFEA90EE7F9B4C24A6EC427622C77D09/sda-ti-smartview-ti-84-plus)
