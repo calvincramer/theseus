@@ -2,6 +2,7 @@
 
 This game is a clone of an old iPhone game I used to play called Theseus by Jason Fieldman for the TI-84 Plus. The name is based upon the story "Theseus and the Minotaur". While this is a clone of the [older version of the game from 2008](https://www.fieldman.org/theseus) and apparantly he came out with a [newer version of it in 2015](https://www.fieldman.org/theseus-plus)! You can see the source code of the original [here](https://github.com/jmfieldman/Theseus). All of the level designs are copied from Jason Fieldman's game.
 
+![](theseus-demo.gif)
 
 The Level Maker is a graphical tool to easily generate the needed representation that is used to store levels.
 
